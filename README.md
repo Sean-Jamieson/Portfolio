@@ -1,4 +1,4 @@
 # Portfolio
 https://seanjamieson.xyz/
 
-My Personal Protfolio
+My Personal Portfolio

@@ -40,12 +40,12 @@ export const projects = [
     link: "https://github.com/seanJamieson/Inventory-Manager",
   },
   {
-    title: "COMING SOON",
-    subtitle: " Click here to see all of my public projects",
+    title: "BltnBrd",
+    subtitle: "MERN Stack, Chakra UI",
     description:
-      "Im always working on the next big thing! Stay Tuned!",
-    image: "./under-construction.jpg",
-    link: "https://github.com/seanJamieson",
+      "Community bulletin board designed to increase the mental, physical, and emotional wellbeing of the community. Created in a team of four for a hackathon where i was partially responsible for backend development.",
+    image: "./bltnbrd.gif",
+    link: "https://github.com/seanJamieson/BulletinBoard",
   },
 ];
 

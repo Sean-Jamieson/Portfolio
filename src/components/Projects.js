@@ -27,13 +27,13 @@ export default function Projects() {
                                     src={project.image}
                                 />
                                 <div className="px-8 py-10 relative z-10 w-full border-8 border-salmon bg-darkEuc opacity-0 hover:opacity-100">
-                                    <h2 className="tracking-widest text-sm title-font font-medium text-euc mb-1">
+                                    <h2 className="tracking-widest text-sm title-font font-medium text-darkBlue mb-1">
                                         {project.subtitle}
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-greyText mb-3">
                                         {project.title}
                                     </h1>
-                                    <p className="leading-relaxed text-euc">{project.description}</p>
+                                    <p className="leading-relaxed text-darkBlue">{project.description}</p>
                                 </div>
                             </div>
                         </a>

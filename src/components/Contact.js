@@ -7,7 +7,7 @@ export default function Contact() {
 
     function encode(data) {
         return Object.keys(data)
-            .map(    
+            .map(
                 (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
             )
             .join("&");
@@ -20,12 +20,12 @@ export default function Contact() {
             headers: { "Content-type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
-        .then(() => alert("message sent!"))
-        .catch((error) => alert(error));
+            .then(() => alert("message sent!"))
+            .catch((error) => alert(error));
     }
     return (
         <section id="contact" className="relative">
-            <div className="container px-5 py-10 mx-auto justify-center flex sm:flex-nowrap flex-wrap">
+            <div className="container px-5 py-6 mt-5 mx-auto justify-center flex sm:flex-nowrap flex-wrap">
                 <form
                     netlify
                     name="contact"
@@ -35,8 +35,8 @@ export default function Contact() {
                         Hire Me
                     </h2>
                     <p className="leading-relaxed mb-5 text-darkEuc mx-auto">
-                    Im looking forward to working together! whether you are looking to hire or just 
-                    want a consult on a project im excited to see what we can build together!
+                        Im looking forward to working together! whether you are looking to hire or just
+                        want a consult on a project im excited to see what we can build together!
 
                     </p>
                     <div className="relative mb-4">
@@ -76,10 +76,18 @@ export default function Contact() {
                     </div>
                     <button
                         type="submit"
-                        className= "ml-auto mr-auto w-1/3 text-greyText bg-euc border-0 py-2 px-6 justify-center focus:outline-none hover:bg-darkEuc hover:text-euc rounded text-lg">
-                            Submit
+                        className="ml-auto mr-auto w-1/3 text-greyText bg-euc border-0 py-2 px-6 justify-center focus:outline-none hover:bg-darkEuc rounded text-lg">
+                        Submit
                     </button>
                 </form>
+            </div>
+            <div class="flex flex-row justify-center mb-4">
+                <a class="w-10 mx-2 mt-1" href="https://github.com/seanJamieson">
+                    <img src="./github.png" alt="github"></img>
+                </a>
+                <a class="w-10 mx-2" href="https://www.linkedin.com/in/sean-jamieson-320619214/">
+                    <img src="./linkedin.png" alt="github"></img>
+                </a>
             </div>
         </section>
     );
